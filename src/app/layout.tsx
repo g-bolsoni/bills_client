@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} w-screen h-screen overflow-x-hidden`}>
+      <body className={`${roboto.className} w-screen h-screen overflow-x-hidden bg-gray-700`}>
         <Header />
         <main className='px-6 py-6'>
           {children}
