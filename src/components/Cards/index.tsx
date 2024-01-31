@@ -10,21 +10,41 @@ import { useEffect, useState } from "react";
 
 interface IBills {
   _id: string;
-  description: string;
-  category: string;
-  date: string;
-  payment_methods: string;
-  value: number;
-  from_who: string;
-  situation: string;
-  date_ok: string;
+  bill_name: string;
+  bill_category: string;
+  bill_type: 'Income' | 'Expenses';
+  buy_date: string;
+  payment_type: string;
+  bill_value: number;
   repeat: boolean;
-  parcel: string;
+  installments: string;
   fixed: boolean;
 }
 
 
+
+
 const Cards = () => {
+  const [income, setIncome] = useState(0);
+  const [expenses, setExpenses] = useState(0);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    api.get('/filter?bill_type=Income')
+      .then(response => {
+        const totalIncome  = response.data.reduce((acc:number, item:IBills) => acc + item.bill_value, 0);
+        setIncome(totalIncome);
+      });
+
+    api.get('/filter?bill_type=Expenses')
+      .then(response => {
+        const totalExpenses  = response.data.reduce((acc:number, item:IBills) => acc + item.bill_value, 0);
+        setExpenses(totalExpenses);
+      });
+  }, []);
+
+
+
 
   return (
     <section className="flex w-full justify-around -mt-24">
@@ -37,7 +57,15 @@ const Cards = () => {
             width={32}
           />
         </div>
-        <span className="text-3xl font-bold text-white"> R$ 17.400,00</span>
+        <span className="text-3xl font-bold text-white">
+          {
+            new Intl.NumberFormat('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+              minimumFractionDigits: 2
+            }).format(income)
+          }
+        </span>
       </div>
 
       <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3">
@@ -49,7 +77,15 @@ const Cards = () => {
             width={32}
           />
         </div>
-        <span className="text-3xl font-bold text-white"> R$ 17.400,00</span>
+        <span className="text-3xl font-bold text-white">
+          {
+            new Intl.NumberFormat('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+              minimumFractionDigits: 2
+            }).format(expenses)
+          }
+        </span>
       </div>
 
       <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3">
@@ -61,7 +97,15 @@ const Cards = () => {
             width={32}
           />
         </div>
-        <span className="text-3xl font-bold text-white"> R$ 17.400,00</span>
+        <span className="text-3xl font-bold text-white">
+          {
+            new Intl.NumberFormat('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+              minimumFractionDigits: 2
+            }).format(total)
+          }
+        </span>
       </div>
     </section>
   )
