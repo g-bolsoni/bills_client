@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skeleton {
+  animation: skeleton 1.5s linear infinite reverse;
+  background: linear-gradient(-90deg, #E1E1E6, #7C7C8A, #E1E1E6);
+  background-size: 200%;
+  position: relative;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 0%
+  }
+
+  50% {
+    background-position: 100%
+  }
+
+  100% {
+    background-position: 0%
+  }
+}

@@ -5,8 +5,8 @@ import entrada from "@/assets/entrada.svg"
 import saida from "@/assets/saida.svg"
 import money from "@/assets/money.svg"
 
-import api from "@/services/api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useBillExpensesData, useBillIncomeData } from "@/hooks/useBillData";
 
 interface IBills {
   _id: string;
@@ -25,30 +25,16 @@ interface IBills {
 
 
 const Cards = () => {
-  const [income, setIncome] = useState(0);
-  const [expenses, setExpenses] = useState(0);
+  const { data, isLoading } = useBillIncomeData();
+
+
+
+
   const [total, setTotal] = useState(0);
-
-  useEffect(() => {
-    api.get('/filter?bill_type=Income')
-      .then(response => {
-        const totalIncome  = response.data.reduce((acc:number, item:IBills) => acc + item.bill_value, 0);
-        setIncome(totalIncome);
-      });
-
-    api.get('/filter?bill_type=Expenses')
-      .then(response => {
-        const totalExpenses  = response.data.reduce((acc:number, item:IBills) => acc + item.bill_value, 0);
-        setExpenses(totalExpenses);
-      });
-  }, []);
-
-
-
 
   return (
     <section className="flex w-full justify-around -mt-24">
-      <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3">
+      <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 h-32">
         <div className="title_info flex w-full justify-between items-center ">
           <span className="text-base font-normal text-gray-300">Entradas</span>
           <Image
@@ -59,11 +45,14 @@ const Cards = () => {
         </div>
         <span className="text-3xl font-bold text-white">
           {
-            new Intl.NumberFormat('pt-BR', {
-              style: 'currency',
-              currency: 'BRL',
-              minimumFractionDigits: 2
-            }).format(income)
+            isLoading ?
+              <span className="w-3/4 block h-12 rounded-xl skeleton "></span>
+              :
+              new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+                minimumFractionDigits: 2
+              }).format(data)
           }
         </span>
       </div>
@@ -83,7 +72,7 @@ const Cards = () => {
               style: 'currency',
               currency: 'BRL',
               minimumFractionDigits: 2
-            }).format(expenses)
+            }).format(1000)
           }
         </span>
       </div>
