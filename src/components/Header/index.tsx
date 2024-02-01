@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-gray-800 h-52">
-        <div className="container mx-auto pt-10 ">
+        <div className="container mx-auto px-6 md:px-0 pt-10 ">
           <div className="flex items-center justify-between">
             <div className="logo_section flex items-center gap-4">
               <Image

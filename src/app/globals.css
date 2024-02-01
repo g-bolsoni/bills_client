@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.min-w-80 {
+  min-width: 320px;
+}
+
 @keyframes skeleton {
   0% {
     background-position: 0%
@@ -21,4 +25,8 @@
   100% {
     background-position: 0%
   }
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
 }

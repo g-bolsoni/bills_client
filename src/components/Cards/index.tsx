@@ -24,13 +24,12 @@ interface IBills {
 
 
 const Cards = () => {
-  const { income, expenses, total} = useBillData();
+  const { income, expenses, total } = useBillData();
 
   return (
+    <section className="cards flex overflow-x-scroll justify-start gap-x-10 px-6 pb-6 md:px-0 md:pb--  md:gap-x-0  md:overflow-x-hidden  gap-y-5 md:flex-row w-full md:justify-around -mt-24">
 
-    <section className="flex flex-col gap-y-5 md:flex-row w-full justify-around -mt-24">
-
-      <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 h-32">
+      <div className="min-w-80 w-full py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 min-h-[144px] h-full">
         <div className="title_info flex w-full justify-between items-center ">
           <span className="text-base font-normal text-gray-300">Entradas</span>
           <Image
@@ -53,7 +52,7 @@ const Cards = () => {
         </span>
       </div>
 
-      <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3">
+      <div className="min-w-80 w-full py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 min-h-[144px] h-full">
         <div className="title_info flex w-full justify-between items-center">
           <span className="text-base font-normal text-gray-300">Saídas</span>
           <Image
@@ -76,7 +75,7 @@ const Cards = () => {
         </span>
       </div>
 
-      <div className="w-80 py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3">
+      <div className="min-w-80 w-full py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 min-h-[144px] h-full">
         <div className="title_info flex w-full justify-between items-center">
           <span className="text-base font-normal text-gray-300">Total dos gastos</span>
           <Image

@@ -26,7 +26,7 @@ export default function RootLayout({
       <QueryClientProvider client={client}>
         <body className={`${roboto.className} w-screen h-screen overflow-x-hidden bg-gray-700`}>
           <Header />
-          <main className='px-6 py-6'>
+          <main className='px-0 md:px-6 py-6'>
             {children}
           </main>
         </body>
