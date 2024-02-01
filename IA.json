@@ -1,0 +1,77 @@
+{
+    "Introducao" : {
+        [
+            {
+                "name": "Apresentação",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=65ef9612-202f-4542-ab45-0207fffebaf2&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/65ef9612-202f-4542-ab45-0207fffebaf2/thumbnail.jpg"
+            },
+            {
+                "name": "Objetivos do módulo",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=aa4131a2-1a36-4545-be80-a8d4bf9c937f&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/aa4131a2-1a36-4545-be80-a8d4bf9c937f/thumbnail.jpg"
+            },
+            {
+                "name": "Visões de IA",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=b3f6c501-8d11-4e81-96b0-c58f2f31b72a&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/b3f6c501-8d11-4e81-96b0-c58f2f31b72a/thumbnail.jpg"
+            },
+            {
+                "name": "Porque utilizar IA",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=4c7ee36b-0c06-4a81-a205-f60a16cfc0e2&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/4c7ee36b-0c06-4a81-a205-f60a16cfc0e2/thumbnail.jpg"
+            },
+            {
+                "name": "Conceitos",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=668fcf81-805f-4982-adff-cf7b44efce64&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/668fcf81-805f-4982-adff-cf7b44efce64/thumbnail.jpg"
+            },
+            {
+                "name": "Linha do Tempo",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=b632bbf1-981e-4159-9a9f-9ec5f7a22d5c&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/b632bbf1-981e-4159-9a9f-9ec5f7a22d5c/thumbnail.jpg"
+            },
+            {
+                "name": "Fundamentos da IA",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=6bb8ac65-4ffa-4c6a-bb8f-4c63647ed2cb&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/6bb8ac65-4ffa-4c6a-bb8f-4c63647ed2cb/thumbnail.jpg"
+            },
+            {
+                "name": "Sub areas",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=af50903c-3799-4bc4-b281-3a8a42b77188&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/af50903c-3799-4bc4-b281-3a8a42b77188/thumbnail.jpg"
+            },
+            {
+                "name": "Tipos e abordagens",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=97951818-45c2-495d-a8f9-c22e64023ad7&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/97951818-45c2-495d-a8f9-c22e64023ad7/thumbnail.jpg"
+            },
+            {
+                "name": "Aplicações",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=b45ed777-46a6-4421-86f1-92a0c1442b0f&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/b45ed777-46a6-4421-86f1-92a0c1442b0f/thumbnail.jpg"
+            },
+            {
+                "name": "Avanços",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=d0f04df1-d724-4f88-9c61-87fa7ca16e8c&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/d0f04df1-d724-4f88-9c61-87fa7ca16e8c/thumbnail.jpg"
+            },
+            {
+                "name": "Desafios",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=3541f8b3-4281-4fbe-8d46-b6c4c9b52244&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/3541f8b3-4281-4fbe-8d46-b6c4c9b52244/thumbnail.jpg"
+            },
+            {
+                "name": "Encerramento",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=687bdd14-9753-4d76-8575-81779c10cfe5&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/687bdd14-9753-4d76-8575-81779c10cfe5/thumbnail.jpg"
+            },
+        ]
+
+    },
+    "Ambiente-de-desenvolvimento": {
+       [
+
+       ]
+    }
+}

@@ -28,21 +28,19 @@ const totalExpenses = async () => {
   return totalExpenses;
 }
 
-export function useBillIncomeData() {
+export function useBillData() {
   const income = useQuery({
     queryFn: totalIncome,
     queryKey: ['income-data'],
     refetchInterval: 60 * 5 * 1000
   });
 
-  return income;
-}
-export function useBillExpensesData() {
-  const income = useQuery({
+  const expenses = useQuery({
     queryFn: totalExpenses,
     queryKey: ['expenses-data'],
     refetchInterval: 60 * 5 * 1000
   });
 
-  return income;
+  const total = income.data - expenses.data;
+  return { income, expenses, total };
 }
