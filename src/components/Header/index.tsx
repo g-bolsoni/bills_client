@@ -1,8 +1,12 @@
 import Image from "next/image";
 
 import logo from "@/assets/logo.svg"
+import { useState } from "react";
+import Modal from "@/components/Modal/index";
 
 const Header = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   return (
     <>
       <header className="bg-gray-800 h-52">
@@ -16,7 +20,12 @@ const Header = () => {
               />
               <span className="text-2xl font-bold text-white">Gb Money</span>
             </div>
-            <button className="flex py-3 px-5 justify-center items-center gap-3 rounded-md text-white transition-all duration-200 bg-green-500 hover:bg-green-400">Nova transação</button>
+            <button onClick={() => setIsModalVisible(true)} className="flex py-3 px-5 justify-center items-center gap-3 rounded-md text-white transition-all duration-200 bg-green-500 hover:bg-green-400">Nova transação</button>
+            {isModalVisible &&
+              <Modal onClose={() => setIsModalVisible(false)} >
+                <h1>Testando esse modal</h1>
+              </Modal>
+            }
           </div>
         </div>
       </header>
