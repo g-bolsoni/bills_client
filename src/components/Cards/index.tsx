@@ -15,7 +15,7 @@ const Cards = () => {
   return (
     <section className="cards flex overflow-x-scroll justify-start gap-x-10 px-6 pb-6 md:px-0 md:pb-0 md:gap-x-0 md:overflow-x-hidden  gap-y-5 md:flex-row w-full md:justify-around -mt-24">
 
-      <div className="min-w-80 w-full md:min-w-max py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 min-h-[144px] h-full">
+      <div className="min-w-80 w-80 md:min-w-max py-6 pl-8 pr-6 bg-gray-500 rounded-md flex flex-col gap-3 min-h-[144px] h-full">
         <div className="title_info flex w-full justify-between items-center ">
           <span className="text-base font-normal text-gray-300">Entradas</span>
           <Image

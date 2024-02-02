@@ -66,12 +66,88 @@
                 "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=687bdd14-9753-4d76-8575-81779c10cfe5&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
                 "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/687bdd14-9753-4d76-8575-81779c10cfe5/thumbnail.jpg"
             },
+
+            // "Ambiente-de-desenvolvimento"
+            {
+                "name": "Apresentação",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=5fcc5300-d106-4ab9-b99a-a437994af142&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/5fcc5300-d106-4ab9-b99a-a437994af142/thumbnail.jpg"
+            },
+            {
+                "name": "Introdução",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=9428cfd0-d960-486b-9871-fa4af03d6410&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/9428cfd0-d960-486b-9871-fa4af03d6410/thumbnail.jpg"
+            },
+            {
+                "name": "Gerenciador de Versões Python",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=e50bfbfb-93f8-4d88-a32d-d5411085c098&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/e50bfbfb-93f8-4d88-a32d-d5411085c098/thumbnail.jpg"
+            },
+            {
+                "name": "Gerenciador de Ambientes Virtuais",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=f99a4451-5a49-4dd5-bd37-9528453b07b3&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/f99a4451-5a49-4dd5-bd37-9528453b07b3/thumbnail.jpg"
+            },
+            {
+                "name": "Opções de Gerenciadores",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=0b4562a0-00c0-4d37-8064-148643cd6cb7&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/0b4562a0-00c0-4d37-8064-148643cd6cb7/thumbnail.jpg"
+            },
+            {
+                "name": "Hands-On Pyenv",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=a7f6582a-57d8-467f-af72-05dc9b25e05a&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/a7f6582a-57d8-467f-af72-05dc9b25e05a/thumbnail.jpg"
+            },
+            {
+                "name": "Hands-On Pipenv",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=b64c2760-379b-40b4-b095-7ba5da68bfc3&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/b64c2760-379b-40b4-b095-7ba5da68bfc3/thumbnail.jpg"
+            },
+            {
+                "name": "VSCode - Extensions",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=7904e3b1-2e69-4dac-9342-8f54d55afdba&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/7904e3b1-2e69-4dac-9342-8f54d55afdba/thumbnail.jpg"
+            },
+            {
+                "name": "Vscode - Interação Com Python",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=a03cfac2-7c32-4121-8aea-123dc19dd6ed&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/a03cfac2-7c32-4121-8aea-123dc19dd6ed/thumbnail.jpg"
+            },
+            {
+                "name": "Encerramento",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=3f4d4ea9-40ca-4564-9dc1-48ae10bfb696&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/3f4d4ea9-40ca-4564-9dc1-48ae10bfb696/thumbnail.jpg"
+            }
         ]
-
     },
-    "Ambiente-de-desenvolvimento": {
-       [
-
-       ]
+    "Estatistica para devs": {
+        [
+            {
+                "name": "Apresentação do Módulo",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=67d3c533-0f96-427f-9cf1-4781c81bd24d&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/67d3c533-0f96-427f-9cf1-4781c81bd24d/thumbnail.jpg"
+            }
+            {
+                "name": "Introdução",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=49c477c3-1ca9-427e-a5f2-837866db5b3d&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/49c477c3-1ca9-427e-a5f2-837866db5b3d/thumbnail.jpg"
+            }
+            {
+                "name": "O que é",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=fa06126f-f4e8-4c68-bc40-cd4efe62bd11&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/fa06126f-f4e8-4c68-bc40-cd4efe62bd11/thumbnail.jpg"
+            }
+            {
+                "name": "População e Amostra",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=5ff11da7-e520-4990-b695-356493c7dca3&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/5ff11da7-e520-4990-b695-356493c7dca3/thumbnail.jpg"
+            }
+            {
+                "name": "Tipos de Variáveis",
+                "link": "https://player-vz-762f4670-e04.tv.pandavideo.com.br/embed/?v=0790b7f0-8a5e-445c-893f-8f77d1537341&autoplay=true&muted=false&smartAutoplay=true&controlsColor=%23FFF&playOpensFullscreen=true&color=%239956F6",
+                "thumb": "https://b-vz-762f4670-e04.tv.pandavideo.com.br/0790b7f0-8a5e-445c-893f-8f77d1537341/thumbnail.jpg"
+            }
+        ]
     }
+
 }
