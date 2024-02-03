@@ -4,6 +4,10 @@ import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const client = new QueryClient;
 
 const roboto = Roboto({
@@ -29,6 +33,7 @@ export default function RootLayout({
           <main className='px-0 md:px-6 py-6'>
             {children}
           </main>
+          <ToastContainer />
         </body>
       </QueryClientProvider>
     </html>
