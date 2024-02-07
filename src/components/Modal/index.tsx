@@ -59,18 +59,13 @@ const schemaForm = z.object({
         message: 'Valor inválido',
       }),
 
-    repeat: z.coerce.boolean({ strict: true }),
+    repeat: z.coerce.boolean(),
 
     installments: z
       .string()
-      .refine((value, data) => {
-        // Verifica se o campo repeat é true e se installments está presente
-        return data && data.repeat ? !!value : true;
-      }, {
-        message: 'Campo obrigatório quando repeat é true',
-      }),
+      .min(1, 'Campo obrigatório'),
 
-    fixed: z.coerce.boolean({ strict: true }),
+    fixed: z.coerce.boolean(),
 
     bill_type: z
       .string()
