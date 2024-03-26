@@ -7,8 +7,6 @@ import money from "@/assets/money.svg"
 
 import { useBillData } from "@/hooks/useBillData";
 
-
-
 const Cards = () => {
   const { income, expenses, total } = useBillData();
 

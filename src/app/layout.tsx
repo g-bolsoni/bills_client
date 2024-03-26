@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NextAuthSessionProvider from '@/providers/sessionProvider';
 
 const client = new QueryClient;
 
@@ -27,15 +28,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <QueryClientProvider client={client}>
-        <body className={`${roboto.className} w-screen h-screen overflow-x-hidden bg-gray-700`}>
-          <Header />
-          <main className='px-0 md:px-6 py-6'>
-            {children}
-          </main>
-          <ToastContainer />
-        </body>
-      </QueryClientProvider>
+      <NextAuthSessionProvider>
+        <QueryClientProvider client={client}>
+          <body className={`${roboto.className} w-screen h-screen overflow-x-hidden bg-gray-700`}>
+            <main className='px-0 md:px-6 py-6'>
+              {children}
+            </main>
+            <ToastContainer />
+          </body>
+        </QueryClientProvider>
+      </NextAuthSessionProvider>
     </html>
   )
 }
