@@ -31,7 +31,7 @@ export default function RootLayout({
       <NextAuthSessionProvider>
         <QueryClientProvider client={client}>
           <body className={`${roboto.className} w-screen h-screen overflow-x-hidden bg-gray-700`}>
-            <main className='px-0 md:px-6 py-6'>
+            <main className='h-full px-0 md:px-6 py-6'>
               {children}
             </main>
             <ToastContainer />

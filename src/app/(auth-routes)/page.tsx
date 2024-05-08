@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import logo from "@/assets/logo.svg"
 import Image from "next/image"
 import Link from "next/link"
@@ -143,11 +142,11 @@ export default function Home() {
             className="bg-green-500 h-12 rounded-xl px-3 py-2 text-white font-medium mt-3 disabled:opacity-50"
             type="submit"
             disabled={Object.keys(errors).length > 0}
-          >Cadastrar</button>
+          >Entrar</button>
           <Link
             className="text-sm text-blue-500 hover:underline"
-            href='/login'
-          >Já possui cadastro?</Link>
+            href='/register'
+          >Não possui cadastro?</Link>
         </div>
       </form>
     </section >
