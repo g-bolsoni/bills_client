@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import api from "@/services/api";
 
 interface IUserProps {
   name: string;
@@ -30,15 +31,12 @@ const schemaForm = z.object({
   password: z
     .string()
     .min(8, 'A senha deve ter pelo menos 8 caracteres')
-    /*.refine(value => /[A-Z]/.test(value), {
+    .refine(value => /[A-Z]/.test(value), {
       message: 'A senha deve conter pelo menos uma letra maiúscula',
-    })
-    .refine(value => /[0-9]/.test(value), {
-      message: 'A senha deve conter pelo menos um número',
     })
     .refine(value => /[^A-Za-z0-9]/.test(value), {
       message: 'A senha deve conter pelo menos um caractere especial',
-    })*/,
+    }),
 
   confirmPassword: z.string()
     .min(1, 'Campo obrigatório')
@@ -64,19 +62,28 @@ export default function Home() {
     resolver: zodResolver(schemaForm)
   });
 
-  const handleCreateUser = async (data: IUser) => {
-    console.log(data.email, data.password);
+  const handleCreateUser = async ({name, email, password, confirmPassword}: IUser) => {
 
-    const result = await signIn('credentials', {
-      email: data.email,
-      password:  data.password,
-      redirect: false
+    const createUser = await api.post('/auth/register', {
+        name,
+        email,
+        password,
+        confirmPassword
     });
 
-    console.log(result);
+    if(createUser.status !== 201){
+      console.error(createUser);
+      return ;
+    }
 
-    if (result?.error) {
-      console.log(result);
+    const createCredendials = await signIn('credentials', {
+      email: email,
+      password: password,
+      redirect: true
+    });
+
+    if (createCredendials?.error) {
+      console.error(createCredendials);
       return;
     }
     router.replace('/admin')
